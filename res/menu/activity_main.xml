@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+ <item android:id="@+id/viewtiming"
+        android:title="@string/menu_ViewRecord"
+       />
+ 
+  <item android:id="@+id/deletetiming"
+        android:title="@string/menu_DeleteRecord"
+         />
+  
+  <item android:id="@+id/feedback"
+        android:title="@string/menu_feedback"
+         />
+</menu>

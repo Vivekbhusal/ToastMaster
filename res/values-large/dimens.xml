@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- header -->
+    <dimen name="headerheight">80dp</dimen>
+    <dimen name="headerpaddingButton">10dp</dimen>
+    <dimen name="headerpaddingTop">10dp</dimen>
+    <dimen name="headertextsize">40dp</dimen>
+    <dimen name="headermarginLeft">25dp</dimen>
+    <!-- header FINISH -->
+
+    <!-- upper timer info part -->
+    <dimen name="RLmarginleft">25dp</dimen>
+    <dimen name="RLmarginRight">25dp</dimen>
+    <dimen name="RLmarginTop">35dp</dimen>
+    <dimen name="RLpaddingButton">40dp</dimen>
+    <dimen name="RLpaddingTop">40dp</dimen>
+    	
+    	<!-- Text View(Speaker type)  -->
+    	<dimen name="STmarginLeft">20dp</dimen>
+    	<dimen name="speakertypetextsize">65dp</dimen>
+    	<!-- Text View(Speaker type)  FINISH -->
+    
+    	<!-- Image(color flag) height and widht -->
+    	<dimen name="Flagheight">40dp</dimen>
+    	<dimen name="Flagwidth">40dp</dimen>
+    	<dimen name="FlagmarginTop">25dp</dimen>
+    	<dimen name="FlagmarginLeft">30dp</dimen>
+    	<!-- Image(color flag) height and width FINISH -->
+    	
+    	<!-- Time display -->
+    	<dimen name="TDmarginLeft">15dp</dimen>
+    	<dimen name="TDmarginTop">24dp</dimen>
+    	<dimen name="TDtextsize">35dp</dimen>
+    	<!-- Time display FINISH -->
+    <!-- upper timer info part complete -->
+    
+    <!-- Start button -->
+    <dimen name="STARTmarginTop">25dp</dimen>
+    <dimen name="STARTtextsize">40dp</dimen>
+    <dimen name="STARTpadding">20dp</dimen>
+    <!-- Start button FINISH -->
+    
+    <!-- All Button  -->
+    <dimen name="BTtextsize">25dp</dimen>
+    <dimen name="infotextsize">23dp</dimen>
+    <!-- All butoon FINISH -->
+
+</resources>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white" >
+
+    <!-- Header Starts -->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/headerheight"
+        android:background="@layout/header_gradient"
+        android:paddingBottom="@dimen/headerpaddingButton"
+        android:paddingTop="@dimen/headerpaddingTop" >
+
+       
+
+        <TextView
+            android:id="@+id/toastmastertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/headermarginLeft"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/headertextsize"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/headertextsize"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/eye" 
+            android:contentDescription="@string/menu_ViewRecord"/>
+        
+    </RelativeLayout>
+    
+
+    <!-- Header Ends -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/RLmarginleft"
+        android:layout_marginRight="@dimen/RLmarginRight"
+        android:layout_marginTop="@dimen/RLmarginTop"
+        android:background="@drawable/timedisplay"
+        android:paddingBottom="@dimen/RLpaddingButton"
+        android:paddingTop="@dimen/RLpaddingTop" >
+
+        <TextView
+            android:id="@+id/speakerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/STmarginLeft"
+            android:text="@string/Icebreaker"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/speakertypetextsize" 
+            android:textColor="@color/black"/>
+
+        <!-- For Green Display -->
+        <!-- Green Display logo -->
+
+        <ImageView
+            android:id="@+id/Greencircle"
+            android:layout_width="@dimen/Flagwidth"
+            android:layout_height="@dimen/Flagheight"
+            android:layout_alignLeft="@+id/speakerText"
+            android:layout_below="@+id/speakerText"
+            android:layout_marginTop="@dimen/FlagmarginTop"
+            android:contentDescription="@string/GreenFlag"
+            android:src="@drawable/greencircle" />
+
+        <!-- Green Display time -->
+
+        <TextView
+            android:id="@+id/green_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speakerText"
+            android:layout_marginLeft="@dimen/TDmarginLeft"
+            android:layout_marginTop="@dimen/TDmarginTop"
+            android:layout_toRightOf="@+id/Greencircle"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/TDtextsize" 
+            android:textColor="@color/black" />
+        <!-- Green display ends -->
+
+
+        <!-- For Yellow Display -->
+        <!-- yellow circle logo -->
+
+        <ImageView
+            android:id="@+id/Yellowcircle"
+            android:layout_width="@dimen/Flagwidth"
+            android:layout_height="@dimen/Flagheight"
+            android:layout_below="@+id/speakerText"
+            android:layout_marginLeft="@dimen/FlagmarginLeft"
+            android:layout_marginTop="@dimen/FlagmarginTop"
+            android:layout_toRightOf="@+id/green_time"
+            android:contentDescription="@string/YellowFlag"
+            android:src="@drawable/yellowcircle" />
+
+        <!-- Yellow time -->
+
+        <TextView
+            android:id="@+id/yellow_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speakerText"
+            android:layout_marginLeft="@dimen/TDmarginLeft"
+            android:layout_marginTop="@dimen/TDmarginTop"
+            android:layout_toRightOf="@+id/Yellowcircle"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/TDtextsize" 
+            android:textColor="@color/black" />
+        <!-- yellow display ends -->
+
+
+        <!-- For Red Display -->
+        <!-- Red circle logo -->
+
+        <ImageView
+            android:id="@+id/Redcircle"
+            android:layout_width="@dimen/Flagwidth"
+            android:layout_height="@dimen/Flagheight"
+            android:layout_below="@+id/speakerText"
+            android:layout_marginLeft="@dimen/FlagmarginLeft"
+            android:layout_marginTop="@dimen/FlagmarginTop"
+            android:layout_toRightOf="@+id/yellow_time"
+            android:contentDescription="@string/RedFlag"
+            android:src="@drawable/redcircle" />
+
+        <!-- Red time -->
+
+        <TextView
+            android:id="@+id/red_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speakerText"
+            android:layout_marginLeft="@dimen/TDmarginLeft"
+            android:layout_marginTop="@dimen/TDmarginTop"
+            android:layout_toRightOf="@+id/Redcircle"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/TDtextsize" 
+            android:textColor="@color/black" />
+        <!-- Red display ends -->
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/starttimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="@dimen/STARTmarginTop"
+        android:background="@drawable/startbutton_gradient"
+        android:text="@string/Start"
+        android:textColor="@color/white"
+        android:textSize="@dimen/STARTtextsize"
+        android:padding="@dimen/STARTpadding" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/starttimer"
+        android:background="@color/selectorbackground"
+        android:layout_marginTop="@dimen/RLmarginTop" >
+
+        <TextView
+            android:id="@+id/chooseinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:text="@string/choosespeech" 
+            android:textColor="@color/black"
+		    android:textSize="@dimen/infotextsize" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/chooseinfo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="7dp" >
+        <!--     android:background="@drawable/tablegrid"  -->
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+                
+		          <Button
+		            android:id="@+id/icebreaker"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/Icebreaker"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient"
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize"/>
+		          
+		          <Button
+		            android:id="@+id/project2to9"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/Project2to9"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient"
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize"/>
+		          
+		          
+             </TableRow>
+             
+            <TableRow
+                android:id="@+id/tableRow2"
+                 android:layout_width="0dp"
+                android:layout_height="0dp" 
+                android:layout_weight="1"  >
+                
+		          <Button
+		            android:id="@+id/project10"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/Project10"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient" 
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize"/>
+		          
+		          <Button
+		            android:id="@+id/evaluator"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/Evaluator"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient"
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize" />
+             </TableRow>
+              
+            <TableRow
+                android:id="@+id/tableRow3"
+                 android:layout_width="0dp"
+                android:layout_height="0dp" 
+                android:layout_weight="1"  >
+                
+		          <Button
+		            android:id="@+id/tabletopic"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/Tabletopic"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient"
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize" />
+		          
+		          <Button
+		            android:id="@+id/speech12min"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/speech12min"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient"
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize" />
+             </TableRow>
+             
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"   >
+                
+		          <Button
+		            android:id="@+id/speech15min"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/speech15min"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient"
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize" />
+		          
+		          <Button
+		            android:id="@+id/speech20min"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/speech20min"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient"
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize" />
+             </TableRow>
+             
+            <TableRow
+                android:id="@+id/tableRow5"
+                 android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"   >
+                
+		          <Button
+		            android:id="@+id/speech30min"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/speech30min"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient"
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize" />
+		          
+		          <Button
+		            android:id="@+id/customtime"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:text="@string/customtime"
+		            android:layout_weight="1" 
+		            android:background="@drawable/button_gradient"
+		            android:drawableRight="@drawable/arrow"
+		            android:textSize="@dimen/BTtextsize" />
+             </TableRow>
+
+       </TableLayout>
+      
+    </RelativeLayout>
+
+</RelativeLayout>
