@@ -1,0 +1,46 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">ToastMaster Timer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_ViewRecord">View Timing</string>
+    <string name="menu_feedback">Send Feedback</string>
+    <string name="menu_DeleteRecord">Delete Record</string>
+    <string name="title_activity_main">ToastMaster Timer</string>
+    <string name="Green">Green</string>
+    <string name="Yellow">Yellow</string>
+    <string name="Red">Red</string>
+    <string name="GreenFlag">Green Flag</string>
+    <string name="YellowFlag">Yellow Flag</string>
+    <string name="RedFlag">Red Flag</string>
+    <string name="Icebreaker">ICE BREAKER</string>
+    <string name="Project2to9">PROJECT 2 &#8211; 9</string>
+    <string name="Project10">PROJECT 10</string>
+    <string name="Evaluator">EVALUATOR</string>
+    <string name="Tabletopic">TABLE TOPICS</string>
+    <string name="Start">START TIMER</string>
+    <string name="speech12min">12MIN SPEECH</string>
+    <string name="speech15min">15MIN SPEECH</string>
+    <string name="speech20min">20MIN SPEECH</string>
+    <string name="speech30min">30MIN SPEECH</string>
+    <string name="customtime">CUSTOM TIME</string>
+    <string name="zerotiming">00:00 min</string>
+    
+    <string name="zero">00:00</string>
+    <string name="stop">STOP</string>
+    <string name="record">RECORD TIME</string>
+    <string name="Name">Name :</string>
+    <string name="Done">Done</string>
+    <string name="chronometer_initial_format">Initial format:<xliff:g id="initial-format">%</xliff:g></string>
+    
+    <string name="Definetiming">Define Timing</string>
+    <string name="mins">mins</string>
+    <string name="min">min</string>
+    
+    <string name="saveandstart">Save and Start Time</string>
+    <string name="choosespeech">CHOOSE A SPEECH FORMAT FROM BELOW</string>
+    <string name="pause">PAUSE</string>
+        
+    
+    
+
+</resources>

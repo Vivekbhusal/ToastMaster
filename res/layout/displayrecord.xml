@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="vertical"
+        android:background="#631522">
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Timing Record"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/deleteView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/delete" />
+            
+        </RelativeLayout>
+        
+        <TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:id="@+id/tablelayoutview"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black" >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:text="Name"
+	                android:textColor="@color/white"
+	                android:textSize="16dp" />
+	
+
+	     	   <TextView
+	     	       android:id="@+id/textView2"
+	     	       android:layout_width="100dp"
+	     	       android:layout_height="wrap_content"
+	     	       android:text="Type"
+	     	       android:textColor="@color/white"
+	     	       android:textSize="16dp" />
+
+
+	     	   <TextView
+	     	       android:id="@+id/textView3"
+	     	       android:layout_width="60dp"
+	     	       android:layout_height="wrap_content"
+	     	       android:text="Time"
+	     	       android:textColor="@color/white"
+	     	       android:textSize="16dp" />
+
+        </TableRow>
+
+        
+</TableLayout>
+
+    </LinearLayout>

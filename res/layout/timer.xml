@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:id="@+id/timerbackground"
+        android:keepScreenOn="true">
+
+        <Chronometer
+            android:id="@+id/timingview"
+            android:format="@string/chronometer_initial_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp"
+            android:textSize="70dp" />
+        
+		 <Button
+            android:id="@+id/pause"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="200dp"
+            android:layout_marginLeft="36dp"
+            android:text="@string/pause"
+            android:textSize="20dp" />
+        
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="36dp"
+            android:text="@string/stop"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/stop"
+            android:layout_marginBottom="44dp"
+            android:text="@string/record"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
