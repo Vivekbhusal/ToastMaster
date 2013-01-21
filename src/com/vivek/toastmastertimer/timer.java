@@ -24,7 +24,7 @@ public class timer extends Activity implements OnChronometerTickListener {
 	public Button stop, record , pause;
 	public Chronometer timingtv;
 	public String time;
-	public Boolean stoped = false, paused = true;
+	public Boolean stoped = false, paused = false;
 	String typeofspeaker;
 	public String Greentime, Yellowtime, Redtime,timepaused;
 	public RelativeLayout timerbackground;
@@ -65,20 +65,9 @@ public class timer extends Activity implements OnChronometerTickListener {
 				
 				if(paused){
 					
-					paused = false;	
-					timepaused = (String) timingtv.getText();	
-					timingtv.stop();
-					Toast.makeText(timer.this, "Elapsed Time :"+ timepaused,Toast.LENGTH_SHORT).show();
-					record.setEnabled(true);
-					pause.setText("CONTINUE");
-					
-					
-				}
-				else{
-					
-					paused = true;
+					paused = false;
 					int stoppedmillisecond = 0;
-					record.setEnabled(true);
+					record.setEnabled(false);
 					//Log.i(timepaused, timepaused);						
 					
 					String array[]=timepaused.split(":");					
@@ -87,6 +76,19 @@ public class timer extends Activity implements OnChronometerTickListener {
 					timingtv.setBase(SystemClock.elapsedRealtime()- stoppedmillisecond);
 					timingtv.start();
 					pause.setText("PAUSE");
+					stop.setEnabled(true);
+					
+					
+				}
+				else{			
+					
+					paused = true;	
+					timepaused = (String) timingtv.getText();	
+					timingtv.stop();
+					Toast.makeText(timer.this, "Elapsed Time :"+ timepaused,Toast.LENGTH_SHORT).show();
+					record.setEnabled(true);
+					pause.setText("CONTINUE");
+					stop.setEnabled(false);
 					
 					
 					
@@ -99,10 +101,40 @@ public class timer extends Activity implements OnChronometerTickListener {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				stoped = true;
-				pause.setEnabled(false);
-				timingtv.stop();
-				record.setEnabled(true);				
+				if(stoped){
+					
+					paused = false;
+					int stoppedmillisecond = 0;
+					record.setEnabled(false);
+					//Log.i(timepaused, timepaused);						
+					
+					String array[]=timepaused.split(":");					
+					stoppedmillisecond = Integer.parseInt(array[0]) * 60 * 1000 + Integer.parseInt(array[1]) * 1000;
+					//Log.i("stoppedMS", String.valueOf(stoppedmillisecond));				
+					timingtv.setBase(SystemClock.elapsedRealtime()- stoppedmillisecond);
+					timingtv.start();
+					stop.setText("STOP");
+					pause.setEnabled(true);
+					pause.setText("PAUSE");
+					stoped = false;
+					
+					
+				}
+				else{
+					
+					paused = false;	
+					timepaused = (String) timingtv.getText();	
+					timingtv.stop();
+					Toast.makeText(timer.this, "Elapsed Time :"+ timepaused,Toast.LENGTH_SHORT).show();
+					stoped = true;
+					pause.setEnabled(false);
+					record.setEnabled(true);
+					stop.setText("CONTINUE");
+					
+				}
+				
+				
+								
 				
 			}
 		});
