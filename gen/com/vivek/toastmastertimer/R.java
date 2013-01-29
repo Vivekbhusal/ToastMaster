@@ -136,21 +136,22 @@ public final class R {
         public static final int eye=0x7f020003;
         public static final int green=0x7f020004;
         public static final int greencircle=0x7f020005;
-        public static final int ic_action_search=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int menu_options=0x7f020008;
-        public static final int onclick_button_gradient=0x7f020009;
-        public static final int red=0x7f02000a;
-        public static final int redcircle=0x7f02000b;
-        public static final int startbutton_blankstate_gradient=0x7f02000c;
-        public static final int startbutton_gradient=0x7f02000d;
-        public static final int startbutton_onclick_gradient=0x7f02000e;
-        public static final int tablegrid=0x7f02000f;
-        public static final int timedisplay=0x7f020010;
-        public static final int toastmaster_icon=0x7f020011;
-        public static final int without_click_button_gradient=0x7f020012;
-        public static final int yellow=0x7f020013;
-        public static final int yellowcircle=0x7f020014;
+        public static final int header_gradient=0x7f020006;
+        public static final int ic_action_search=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int menu_options=0x7f020009;
+        public static final int onclick_button_gradient=0x7f02000a;
+        public static final int red=0x7f02000b;
+        public static final int redcircle=0x7f02000c;
+        public static final int startbutton_blankstate_gradient=0x7f02000d;
+        public static final int startbutton_gradient=0x7f02000e;
+        public static final int startbutton_onclick_gradient=0x7f02000f;
+        public static final int tablegrid=0x7f020010;
+        public static final int timedisplay=0x7f020011;
+        public static final int toastmaster_icon=0x7f020012;
+        public static final int without_click_button_gradient=0x7f020013;
+        public static final int yellow=0x7f020014;
+        public static final int yellowcircle=0x7f020015;
     }
     public static final class id {
         public static final int Greencircle=0x7f0a0013;
@@ -210,10 +211,9 @@ public final class R {
         public static final int customtiming=0x7f030000;
         public static final int displayrecord=0x7f030001;
         public static final int feedback=0x7f030002;
-        public static final int header_gradient=0x7f030003;
-        public static final int maindisplay=0x7f030004;
-        public static final int recorder=0x7f030005;
-        public static final int timer=0x7f030006;
+        public static final int maindisplay=0x7f030003;
+        public static final int recorder=0x7f030004;
+        public static final int timer=0x7f030005;
     }
     public static final class menu {
         public static final int activity_main=0x7f090000;
